@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+
+    <title>Clear Path: Mental Health Support</title>
+</head>
+<body>
+    <div class="background-overlay"></div>
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Clear Path</a>
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#" aria-current="page">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#journal">Journal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#mood">Mood Tracker</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#meditation">Meditation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#resources">Resources</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="design_process.html">design process</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="features_and_benefits.html">Features and Benefits</a>
+                    </li>
+                </ul>
+                <form class="d-flex my-2 my-lg-0">
+                    <input class="form-control me-sm-2" type="text" placeholder="Search" />
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="hero-section" id="hero-section">
+        <h1>Clear Path: Your Journey to Mental Wellness</h1>
+        <p>Track your mood, journal your thoughts, and discover calming meditation methods.</p>
+        <a href="#journal" class="btn btn-primary">Start Journaling</a>
+    </div>
+
+    <div class="container">
+        <div id="journal" class="journal-section row mt-5">
+            <div class="col-md-12">
+                <div class="content-box">
+                    <h2 class="text-center">Journal Your Thoughts</h2>
+                    <p class="text-center">Take a moment to reflect and express your feelings through journaling. Writing your thoughts down can help you understand your emotions better.</p>
+                    <form>
+                        <div class="mb-3">
+                            <label for="journal-entry" class="form-label">Journal Entry</label>
+                            <textarea class="form-control" id="journal-entry" rows="5" placeholder="Write about your day..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Save Journal</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div id="mood" class="mood-tracker-section mt-5">
+            <div class="col-md-12">
+                <div class="content-box">
+                    <h2 class="text-center">Track Your Mood</h2>
+                    <p class="text-center">Log your mood to understand your mental state and track your progress over time. Select a mood below that best describes how you're feeling today.</p>
+                    <div class="row text-center">
+                        <div class="col-md-3">
+                            <button class="btn btn-outline-success w-100">Happy</button>
+                        </div>
+                        <div class="col-md-3">
+                            <button class="btn btn-outline-warning w-100">Neutral</button>
+                        </div>
+                        <div class="col-md-3">
+                            <button class="btn btn-outline-danger w-100">Sad</button>
+                        </div>
+                        <div class="col-md-3">
+                            <button class="btn btn-outline-info w-100">Anxious</button>
+                        </div>
+                    </div>
+                    <div class="mt-4 text-center">
+                        <button class="btn btn-primary">View Mood History</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="meditation" class="meditation-section mt-5">
+            <div class="col-md-12">
+                <div class="content-box">
+                    <h2 class="text-center">Meditation for Calm</h2>
+                    <p class="text-center">Find peace and relaxation through guided meditation techniques. Explore different practices designed to reduce stress and increase mindfulness.</p>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h4>Breathing Exercises</h4>
+                            <p>Learn to calm your mind with deep breathing exercises.</p>
+                            <a href="#" class="btn btn-secondary">Start Now</a>
+                        </div>
+                        <div class="col-md-4">
+                            <h4>Mindfulness Meditation</h4>
+                            <p>Practice mindfulness to stay present and reduce stress.</p>
+                            <a href="#" class="btn btn-secondary">Start Now</a>
+                        </div>
+                        <div class="col-md-4">
+                            <h4>Guided Visualizations</h4>
+                            <p>Use guided imagery to relax your body and mind.</p>
+                            <a href="#" class="btn btn-secondary">Start Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="resources" class="resources-section mt-5">
+            <div class="col-md-12">
+                <div class="content-box">
+                    <h2 class="text-center">Mental Health Resources</h2>
+                    <p class="text-center">Explore resources to support your mental health journey. These include therapy options, support groups, and emergency contacts for immediate assistance.</p>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h4>Therapy Support</h4>
+                            <p>Find professional therapists and counselors near you.</p>
+                            <a href="#" class="btn btn-info">Learn More</a>
+                        </div>
+                        <div class="col-md-4">
+                            <h4>Support Groups</h4>
+                            <p>Join communities that offer peer support for mental wellness.</p>
+                            <a href="#" class="btn btn-info">Learn More</a>
+                        </div>
+                        <div class="col-md-4">
+                            <h4>Emergency Contacts</h4>
+                            <p>Find emergency contact numbers in case of urgent mental health needs.</p>
+                            <a href="#" class="btn btn-info">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="contact" class="contact-section mt-5">
+            <div class="col-md-12">
+                <div class="content-box">
+                    <h2 class="text-center">Contact Us</h2>
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="3" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-light text-center py-4">
+        <p>&copy; 2024 Clear Path. All rights reserved.</p>
+        <p>Follow us on: <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Twitter</a></p>
+    </footer>
+
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script>
+        // You can add JavaScript here for mood logging, form submissions, etc.
+    </script>
+</body>
+</html>

@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,11 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" />
     <title>Clear Path: Design Process</title>
-
+    <style>
+        body {
+            background-color: #f4f9fc;
+        }
+        .navbar {
+            background-color: #007bff;
+        }
+        .navbar-brand, .nav-link {
+            color: white;
+        }
+        .navbar-brand:hover, .nav-link:hover {
+            color: #f4f9fc;
+        }
+        .hero-section {
+            background-color: #007bff;
+            color: white;
+            padding: 50px 0;
+            text-align: center;
+        }
+        .section-title {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .bg-light-card {
+            background-color: #e9f7ff;
+            border-radius: 15px;
+        }
+        .carousel-item img {
+            height: 400px;
+            object-fit: cover;
+        }
+        footer {
+            background-color: #343a40;
+            color: white;
+        }
+        footer a {
+            color: #007bff;
+        }
+        footer a:hover {
+            color: #f4f9fc;
+        }
+        .card-custom {
+            border: none;
+            background-color: #f4f9fc;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 15px;
+        }
+        .card-custom .card-body {
+            padding: 2rem;
+        }
+        .card-custom h5 {
+            color: #007bff;
+        }
+        .card-custom p {
+            font-size: 1rem;
+            color: #555;
+        }
+    </style>
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
             <a class="navbar-brand" href="#">Clear Path</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,10 +79,11 @@
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="design_process.html">design process</a>
+                        <a class="nav-link" href="design_process.html">Design Process</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="features_and_benefits.html">Features and Benefits</a>
+                        <a class="nav-link active" href="features_and_benefits.html">Features & Benefits</a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="contact.html">Contact</a>
                     </li>
@@ -34,105 +92,139 @@
         </div>
     </nav>
 
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <h1>Designing Clear Path: A Journey Towards Mental Wellness</h1>
+        <p class="lead">Our thoughtful process focuses on creating an intuitive and soothing app for mental health management.</p>
+    </div>
+
     <!-- Main Content -->
     <div class="container my-5">
 
         <!-- Title -->
-        <h1 class="text-center mb-4">Clear Path App Design Process</h1>
+        <h2 class="section-title text-center mb-4">Our Design Process</h2>
 
-        <!-- Introduction Section -->
-        <div class="mb-4 p-4 bg-light rounded shadow-sm">
-            <p>Welcome to the design process page for the Clear Path app. Below, you will find a detailed explanation of how we approached the app's design, starting from research and wireframing to prototyping and final design decisions. This journey helped us create a user-friendly and intuitive app focused on mental health and wellness.</p>
+ <!-- Research & Ideation -->
+<div class="mb-5">
+    <h4>1. Research & Ideation</h4>
+    <!-- Horizontal Accordion Container -->
+    <div class="accordion" id="accordionResearch">
+        <!-- Accordion Item -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingResearch">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseResearch" aria-expanded="true" aria-controls="collapseResearch">
+                    Research & Ideation
+                </button>
+            </h2>
+            <div id="collapseResearch" class="accordion-collapse collapse" aria-labelledby="headingResearch" data-bs-parent="#accordionResearch">
+                <div class="accordion-body">
+                    <div class="d-flex">
+                        <!-- Text Content on Left -->
+                        <div class="flex-shrink-0" style="width: 50%; padding-right: 20px;">
+                            <p>We started by understanding the mental health needs of users, focusing on features like mood tracking, journaling, and meditation. Research included surveys, user interviews, and analysis of existing apps.</p>
+                        </div>
+                        <!-- Image on Right -->
+                        <div class="flex-grow-1">
+                            <img src="images\csm_E_SDG_Poster_222e18d231.jpg" alt="Clear Path Wireframe" class="img-fluid rounded shadow-lg" />
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+    </div>
+</div>
 
-        <!-- Research & Ideation -->
-        <div class="mb-5">
-            <h4>1. Research & Ideation</h4>
-            <div class="p-4 bg-light rounded shadow-sm">
-                <p>Our first step was to understand the needs of our target audience: individuals seeking mental health support. We conducted surveys, interviewed potential users, and studied existing mental health apps to understand their challenges and needs. Based on this research, we identified key features like mood tracking, journaling, and meditation that would benefit users the most.</p>
-            </div>
-            <div class="text-center mb-4">
-                <img src="images\csm_E_SDG_Poster_222e18d231.jpg" alt="Clear Path Wireframe" class="img-fluid rounded" />
-            </div>
-        </div>
+
 
         <!-- Wireframing -->
         <div class="mb-5">
             <h4>2. Wireframing</h4>
-            <div class="p-4 bg-light rounded shadow-sm">
-                <p>Next, we created wireframes to visualize the app's basic layout and flow. Wireframes allowed us to focus on the core structure and user interaction without worrying about colors and detailed design elements. Below is an example of the initial wireframe for the Clear Path app's main screen.</p>
+            <div class="p-4 bg-light-card rounded shadow-sm">
+                <p>Wireframes were created to visualize the app layout and user flow. We focused on structure and usability, ensuring a seamless interaction with the core features of the app.</p>
             </div>
             <div class="text-center mb-4">
-                <img src="images/wireframe-1.png" alt="Clear Path Wireframe" class="img-fluid rounded" />
+                <img src="images/wireframe-1.png" alt="Clear Path Wireframe" class="img-fluid rounded shadow-lg" />
                 <p><small>Initial Wireframe for the Main Screen</small></p>
             </div>
         </div>
 
-        <!-- User Flow -->
-        <div class="mb-5">
-            <h4>3. User Flow</h4>
-            <div class="p-4 bg-light rounded shadow-sm">
-                <p>We created a user flow to define the steps a user would take within the app. This flow ensured that the user experience was seamless and intuitive, guiding the user from journaling to mood tracking to meditation, with easy navigation throughout the app.</p>
-            </div>
-            
-            <!-- Carousel Container -->
-            <div id="userFlowCarousel" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <!-- Slide 1 -->
-                    <div class="carousel-item active">
-                        <img src="images\persona1.PNG" class="d-block w-100 img-fluid rounded" alt="Clear Path User Flow Step 1">
-                        <div class="carousel-caption d-none d-md-block">
-                        </div>
-                    </div>
-                    <!-- Slide 2 -->
-                    <div class="carousel-item">
-                        <img src="images\persona2.PNG" class="d-block w-100 img-fluid rounded" alt="Clear Path User Flow Step 2">
-                        <div class="carousel-caption d-none d-md-block">
-                        </div>
-                    </div>
-                    <!-- Slide 3 -->
-                    <div class="carousel-item">
-                        <img src="images\persona3.PNG" class="d-block w-100 img-fluid rounded" alt="Clear Path User Flow Step 3">
-                        <div class="carousel-caption d-none d-md-block">
-                        </div>
+        <!-- Design Iterations & Final Design -->
+        <h4>3. Design Iterations & Final Design</h4>
+        <div class="accordion" id="accordionDesign">
+            <!-- Design Iterations Section -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Design Iterations
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionDesign">
+                    <div class="accordion-body">
+                        <p>Throughout the process, we iterated the visual design, testing different color schemes, fonts, and user interface elements. The design went through several rounds of adjustments, ensuring we achieved the right balance of simplicity and usability.</p>
                     </div>
                 </div>
-                <!-- Carousel Controls -->
-                <button class="carousel-control-prev" type="button" data-bs-target="#userFlowCarousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#userFlowCarousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
             </div>
-        </div>
-        
-        <!-- Design Iterations -->
-        <div class="mb-5">
-            <h4>4. Design Iterations</h4>
-            <div class="p-4 bg-light rounded shadow-sm">
-                <p>Once the wireframes and user flow were in place, we moved on to the visual design phase. We experimented with different color schemes, typography, and iconography to create a calm and welcoming interface that would resonate with users seeking mental health support. The design went through several iterations based on feedback from stakeholders and user testing.</p>
+
+        <!-- Carousel for User Flow -->
+        <h4>4. User Flow</h4>
+        <div id="userFlowCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images\persona1.PNG" class="d-block w-100 img-fluid rounded" alt="Clear Path User Flow Step 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="images\persona2.PNG" class="d-block w-100 img-fluid rounded" alt="Clear Path User Flow Step 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="images\persona3.PNG" class="d-block w-100 img-fluid rounded" alt="Clear Path User Flow Step 3">
+                </div>
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#userFlowCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#userFlowCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
 
-        <!-- Final Design -->
-        <div class="mb-5">
-            <h4>5. Final Design</h4>
-            <div class="p-4 bg-light rounded shadow-sm">
-                <p>After refining the designs, we finalized the visual elements and created high-fidelity mockups. The final design reflects a minimalist aesthetic, with soothing colors and clear typography to enhance the user experience. Below is a preview of the final design for the Clear Path app.</p>
+        <!-- Gallery with Cards -->
+        <h4 class="mt-5">5. Design Prototypes</h4>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card card-custom">
+                    <img src="images\prototype.PNG" class="card-img-top" alt="Prototype Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Prototype 1</h5>
+                        <p class="card-text">This is the initial visual design where we began to incorporate soothing colors and intuitive elements for the user interface.</p>
+                    </div>
+                </div>
             </div>
-            <div class="text-center mb-4">
-                <img src="images/final-design.jpg" alt="Clear Path Final Design" class="img-fluid rounded" />
-                <p><small>Final Design for Clear Path App</small></p>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card card-custom">
+                    <img src="images\prototype2.PNG" class="card-img-top" alt="Prototype Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Prototype 2</h5>
+                        <p class="card-text">Refining our design, we adjusted the mood and interaction flow to improve the app's usability and comfort.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card card-custom">
+                    <img src="images\prototype3.PNG" class="card-img-top" alt="Prototype Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Prototype 3</h5>
+                        <p class="card-text">The final prototype version, focusing on simplicity, minimalism, and a clean user interface to enhance user experience.</p>
+                    </div>
+                </div>
             </div>
         </div>
 
         <!-- Conclusion -->
-        <div class="p-4 bg-light rounded shadow-sm">
+        <div class="p-4 bg-light-card rounded shadow-sm">
             <h4>Conclusion</h4>
-            <p>The design process for Clear Path was a journey of collaboration, research, and iteration. By focusing on user needs and ensuring ease of use, we aimed to create an app that provides real value in managing mental health. We're proud of the result, and we believe the Clear Path app will make a positive impact on users' mental wellness journeys.</p>
+            <p>The Clear Path app's design process was a collaborative journey of research, ideation, and iteration. Our goal was to craft an app that enhances mental wellness through simplicity, user-centered design, and intuitive features.</p>
         </div>
 
     </div>

@@ -380,7 +380,6 @@ body::before {
   left: 0;
   right: 0;
   bottom: 0;
-  background: url('../images/art1.png') repeat; /* Enable repeating background */
   opacity: 0.5; /* Adjust opacity here */
   z-index: -1; /* Place it behind the content */
 }
